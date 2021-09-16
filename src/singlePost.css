@@ -1,0 +1,65 @@
+.singlePost {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.singlePost__head {
+  width: 95%;
+  margin: 10px auto;
+  background-color: rgb(194, 255, 255);
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+.singlePost__head > h1 {
+  font-size: 23px;
+  text-transform: capitalize;
+  color: rgb(34, 34, 34);
+}
+.singlePost__head > p {
+  margin-top: 13px;
+  font-size: 25px;
+  font-weight: 300;
+  color: rgb(44, 44, 44);
+}
+.singlePost__comments {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 20px auto;
+}
+.singlePost__comments > div {
+  width: 48%;
+  background-color: rgb(241, 241, 241);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 1%;
+}
+.singlePost__comments > div > h1 {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.singlePost__comments > div > p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+  min-height: 130px;
+}
+.singlePost__comments > div > h3 {
+  font-size: 16px;
+  text-align: right;
+  color: rgb(255, 0, 98);
+  margin-top: 20px;
+  text-transform: lowercase;
+}
+.singlePost__comments > h1 {
+  color: red;
+  font-size: 23px;
+  margin: 20px auto;
+}
+
+@media all and (max-width: 700px) {
+  .singlePost__comments > div {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

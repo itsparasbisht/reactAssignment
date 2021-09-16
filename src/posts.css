@@ -1,0 +1,46 @@
+.posts {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.posts > div {
+  margin: 10px;
+  width: 300px;
+  border: 2px solid rgb(194, 255, 255);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  background-color: rgb(213, 255, 255);
+  transition: all 0.3s;
+}
+.posts > div > h1 {
+  height: 60px;
+  text-transform: capitalize;
+  font-size: 21px;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+}
+.posts > div > p {
+  height: 70px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: rgb(37, 37, 37);
+}
+.posts > div:hover {
+  filter: invert(1) hue-rotate(180deg);
+}
+.posts > div > a {
+  color: blue;
+  margin-top: 15px;
+  text-align: right;
+  transition: all 0.3s;
+}
+.posts > div:hover a {
+  cursor: pointer;
+  color: red;
+}
